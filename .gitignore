@@ -1,0 +1,16 @@
+# Build folders
+Debug/
+Release/
+build/
+
+# Visual Studio temporary files
+*.obj
+*.exe
+*.pdb
+*.idb
+*.ilk
+*.log
+*.user
+*.suo
+*.exe.recipe
+.vs/
