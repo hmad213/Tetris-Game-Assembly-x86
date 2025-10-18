@@ -1,10 +1,12 @@
 INCLUDE Irvine32.inc
+
+EXTERN drawBoard@0:PROC
+
 .data
-	msg BYTE "Hello world!", 0
+	
 .code
 main PROC
-	mov edx, OFFSET msg
-	call WriteString
+	call drawBoard@0
 	exit
 main ENDP
 END main

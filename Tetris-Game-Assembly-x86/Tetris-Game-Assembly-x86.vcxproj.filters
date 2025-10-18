@@ -62,10 +62,7 @@
     </MASM>
   </ItemGroup>
   <ItemGroup>
-    <None Include="board.inc">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="pieces.inc">
+    <None Include="globals.inc">
       <Filter>Header Files</Filter>
     </None>
   </ItemGroup>

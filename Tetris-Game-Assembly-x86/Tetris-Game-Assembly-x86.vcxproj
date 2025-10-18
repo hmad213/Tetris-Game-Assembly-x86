@@ -84,6 +84,9 @@
       <AdditionalLibraryDirectories>C:\irvine</AdditionalLibraryDirectories>
       <AdditionalDependencies>Irvine32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <MASM>
+      <IncludePaths>C:\irvine</IncludePaths>
+    </MASM>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -129,7 +132,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <MASM Include="array_to_coordinates.asm" />
-    <MASM Include="board_state.asm" />
+    <MASM Include="board_state.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\irvine</IncludePaths>
+    </MASM>
     <MASM Include="game_over.asm" />
     <MASM Include="collisions.asm" />
     <MASM Include="lines.asm" />
@@ -145,8 +150,7 @@
     <MASM Include="screen.asm" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="board.inc" />
-    <None Include="pieces.inc" />
+    <None Include="globals.inc" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="input.asm" />
