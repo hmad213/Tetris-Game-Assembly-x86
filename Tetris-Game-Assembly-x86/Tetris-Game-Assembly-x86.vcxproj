@@ -128,11 +128,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <MASM Include="array_to_coordinates.asm" />
+    <MASM Include="board_state.asm" />
+    <MASM Include="game_over.asm" />
+    <MASM Include="collisions.asm" />
+    <MASM Include="lines.asm" />
     <MASM Include="main.asm">
       <FileType>Document</FileType>
       <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\irvine</IncludePaths>
       <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\irvine</IncludePaths>
     </MASM>
+    <MASM Include="movement.asm" />
+    <MASM Include="piece_definitions.asm" />
+    <MASM Include="rotation.asm" />
+    <MASM Include="score.asm" />
+    <MASM Include="screen.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="board.inc" />
+    <None Include="pieces.inc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="input.asm" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

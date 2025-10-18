@@ -13,10 +13,65 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\game">
+      <UniqueIdentifier>{59150be5-a417-4110-a175-6110c1b59882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\board">
+      <UniqueIdentifier>{6da18283-fb48-4972-bbab-fb28da5ee754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\pieces">
+      <UniqueIdentifier>{93a571ef-08bd-425f-841f-7e05addef9fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\render">
+      <UniqueIdentifier>{a60a828f-285c-43d1-96a5-e0bb73323889}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <MASM Include="main.asm">
       <Filter>Source Files</Filter>
     </MASM>
+    <MASM Include="board_state.asm">
+      <Filter>Source Files\game\board</Filter>
+    </MASM>
+    <MASM Include="lines.asm">
+      <Filter>Source Files\game\board</Filter>
+    </MASM>
+    <MASM Include="piece_definitions.asm">
+      <Filter>Source Files\game\pieces</Filter>
+    </MASM>
+    <MASM Include="movement.asm">
+      <Filter>Source Files\game\pieces</Filter>
+    </MASM>
+    <MASM Include="rotation.asm">
+      <Filter>Source Files\game\pieces</Filter>
+    </MASM>
+    <MASM Include="collisions.asm">
+      <Filter>Source Files\game\pieces</Filter>
+    </MASM>
+    <MASM Include="game_over.asm">
+      <Filter>Source Files\game\board</Filter>
+    </MASM>
+    <MASM Include="array_to_coordinates.asm">
+      <Filter>Source Files\game\pieces</Filter>
+    </MASM>
+    <MASM Include="score.asm">
+      <Filter>Source Files\game</Filter>
+    </MASM>
+    <MASM Include="screen.asm">
+      <Filter>Source Files\render</Filter>
+    </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="board.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="pieces.inc">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="input.asm">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
