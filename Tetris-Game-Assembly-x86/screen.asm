@@ -1,4 +1,3 @@
-INCLUDE Irvine32.inc
 INCLUDE globals.inc
 
 PUBLIC drawBoard
@@ -23,8 +22,8 @@ drawBoard PROC
 		mov ecx, BOARD_WIDTH
 
 		colLoop:
-			mov al, boardArray[esi]
-			call WriteChar
+			movzx eax, BYTE PTR boardArray[esi]
+			call WriteDec
 			mov al, ' '
 			call WriteChar
 			inc esi
@@ -41,4 +40,11 @@ drawBoard PROC
 	call Crlf
 	ret
 drawBoard ENDP
+
+; takes next shape as parameter and displays it in a box.
+; change cursor to achieve this
+; OR
+; merge drawBoard with this function
+drawNextPiece PROC 
+drawNextPiece ENDP
 END

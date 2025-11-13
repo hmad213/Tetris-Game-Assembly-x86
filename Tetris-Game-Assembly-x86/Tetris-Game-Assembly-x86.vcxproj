@@ -135,8 +135,7 @@
     <MASM Include="board_state.asm">
       <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\irvine</IncludePaths>
     </MASM>
-    <MASM Include="game_over.asm" />
-    <MASM Include="collisions.asm" />
+    <MASM Include="game.asm" />
     <MASM Include="lines.asm" />
     <MASM Include="main.asm">
       <FileType>Document</FileType>
@@ -145,7 +144,6 @@
     </MASM>
     <MASM Include="movement.asm" />
     <MASM Include="piece_definitions.asm" />
-    <MASM Include="rotation.asm" />
     <MASM Include="score.asm" />
     <MASM Include="screen.asm" />
   </ItemGroup>
@@ -153,7 +151,9 @@
     <None Include="globals.inc" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="input.asm" />
+    <MASM Include="get_input.asm">
+      <FileType>Document</FileType>
+    </MASM>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

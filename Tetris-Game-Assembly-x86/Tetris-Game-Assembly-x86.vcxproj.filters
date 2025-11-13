@@ -42,15 +42,6 @@
     <MASM Include="movement.asm">
       <Filter>Source Files\game\pieces</Filter>
     </MASM>
-    <MASM Include="rotation.asm">
-      <Filter>Source Files\game\pieces</Filter>
-    </MASM>
-    <MASM Include="collisions.asm">
-      <Filter>Source Files\game\pieces</Filter>
-    </MASM>
-    <MASM Include="game_over.asm">
-      <Filter>Source Files\game\board</Filter>
-    </MASM>
     <MASM Include="array_to_coordinates.asm">
       <Filter>Source Files\game\pieces</Filter>
     </MASM>
@@ -60,15 +51,16 @@
     <MASM Include="screen.asm">
       <Filter>Source Files\render</Filter>
     </MASM>
+    <MASM Include="game.asm">
+      <Filter>Source Files\game</Filter>
+    </MASM>
+    <MASM Include="get_input.asm">
+      <Filter>Source Files\game</Filter>
+    </MASM>
   </ItemGroup>
   <ItemGroup>
     <None Include="globals.inc">
       <Filter>Header Files</Filter>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="input.asm">
-      <Filter>Source Files\game</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
